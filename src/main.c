@@ -6,7 +6,7 @@ void GPIO_Config()
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE); 		//->Open the clock of GPIOA
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE); 		//->Open the clock of GPIOD
 
-	GPIO_InitTypeDef GPIO_InitStruct;                     		//->Define the struct of GPIO_init.
+	GPIO_InitTypeDef GPIO_InitStruct;                     		//->Define the structure of GPIO_init.
 
 	//For Button
 	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0;                      //->GPIO Pin  = A0.
